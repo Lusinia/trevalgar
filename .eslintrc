@@ -1,0 +1,70 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "node": true,
+    "browser": true
+  },
+  "plugins": [
+    "react",
+    "react-native"
+  ],
+  "extends": [
+    "google",
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "rules": {
+    "no-console": 1,
+    "no-unexpected-multiline": 2,
+    "react/no-did-mount-set-state": 2,
+    "react/no-direct-mutation-state": 2,
+    "react/prop-types": 2,
+    "no-undef": 2,
+    "semi": [
+      2,
+      "always"
+    ],
+    "no-var": "error",
+    "max-len": [
+      "error",
+      {
+        "code": 120,
+        "ignoreUrls": true,
+        "ignoreStrings": true,
+        "ignoreComments": true,
+        "ignoreTrailingComments": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreRegExpLiterals": true
+      }
+    ],
+    "prefer-const": "error",
+    "no-duplicate-imports": [
+      "error",
+      {
+        "includeExports": true
+      }
+    ],
+    "object-curly-spacing": [
+      "error",
+      "always",
+      {
+        "objectsInObjects": false
+      }
+    ],
+    "no-unused-vars": "error",
+    "camelcase": [
+      "error",
+      {
+        "properties": "always"
+      }
+    ],
+    "no-multi-spaces": 2
+  },
+  "globals": {
+    "Promise": false,
+    "GLOBAL": false,
+    "it": false,
+    "expect": false,
+    "describe": false
+  }
+}
